@@ -96,7 +96,7 @@ def create_video_color_timeline(video_path, file_name, output_path="color_timeli
     font_prop = FontProperties(fname=font_path)
 
     # 在画面正中添加文本
-    ax.text(fig_width_inch / 2, fig_height_inch / 2, f'EP{file_name[14:-4]}',
+    ax.text(fig_width_inch / 2, fig_height_inch / 2, f'EP{file_name}',
             fontproperties=font_prop,  # 使用自定义字体
             fontsize=60,  # 设置字体大小
             color='white',  # 设置字体颜色为白色，在彩色背景上更清晰
@@ -133,3 +133,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
